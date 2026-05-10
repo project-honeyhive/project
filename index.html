@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HoneyHive</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <h1 class="logo">HoneyHive</h1>
+    <ul class="menu">
+        <li class="item"><a href="#" class="link" onclick="show('home')">Home</a></li>
+        <li class="item"><a href="#" class="link" onclick="show('about')">About</a></li>
+        <li class="item"><a href="#" class="link" onclick="show('store')">Store</a></li>
+        <li class="item"><a href="#" class="link" onclick="show('contact')">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home"><div>Welcome to HoneyHive</div></section>
+<section id="about"><div>About us</div></section>
+
+<section id="store">
+    <div class="cont">
+        <div class="store1">
+            <div class="img1"></div>
+            <p class="product-name">Pure Honey</p>
+            <p class="product-price">$15.00</p>
+            <button onclick="addToCart('Pure Honey', 15)">Add to Cart</button>
+        </div>
+        <div class="store1">
+            <div class="img2"></div>
+            <p class="product-name">Wild Honey</p>
+            <p class="product-price">$20.00</p>
+            <button onclick="addToCart('Wild Honey', 20)">Add to Cart</button>
+        </div>
+        <div class="store1">
+            <div class="img3"></div>
+            <p class="product-name">Sidr Honey</p>
+            <p class="product-price">$25.00</p>
+            <button onclick="addToCart('Sidr Honey', 25)">Add to Cart</button>
+        </div>
+        <div class="store1">
+            <div class="img4"></div>
+            <p class="product-name">Clover Honey</p>
+            <p class="product-price">$30.00</p>
+            <button onclick="addToCart('Clover Honey', 30)">Add to Cart</button>
+        </div>
+     
+    </div>
+    <button class="view-cart-btn" onclick="view()"> 🛒</button>
+</section>
+
+<section id="contact"><div>Contact us</div></section>
+
+
+<div class="cart-overlay" id="cartOverlay">
+    <div class="cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span class="cart-close" onclick="closeCart()">X Close</span>
+        </div>
+        <div class="cart-body" id="cartBody"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+</div>
+
+<script src="zika.js"></script>
+</body>
+</html>
