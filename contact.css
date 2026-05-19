@@ -1,0 +1,326 @@
+#contact {
+    background-color: #f2cb8b;
+}
+
+#contact *:not(.fa):not(.fas):not(.far):not(.fab):not(.fal):not([class*="fa-"]) {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#contact .upper-contact {
+    background: url(img/2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 30px 10px;
+    min-height: 72vh;
+}
+
+#contact .contactUs {
+    position: relative;
+    width: 100%;
+    padding: 50px 50px;
+}
+
+#contact .contactUs .title {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+#contact .contactUs .title h2 {
+    color: #ffffff;
+    font-weight: 200;
+}
+
+#contact .contactUs p {
+    width: 400px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+#contact .contactUs p span {
+    color: rgb(241, 230, 18);
+}
+
+#contact .contacts-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 80px;
+    background-color: #f2cb8b;
+    gap: 70px;
+    margin-top: 25px;
+}
+
+#contact .send-a-message h2 {
+    color: #000000;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+#contact .send-a-message h2::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    bottom: -8px;
+    background-color: #f28622;
+    height: 5px;
+    box-sizing: border-box;
+    width: 375px;
+}
+
+#contact .form {
+    margin-top: 15px;
+}
+
+#contact .input-name-email {
+    display: flex;
+    gap: 20px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 17px;
+    border: 1px solid #f28622;
+    background: rgb(237, 228, 212);
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#contact textarea {
+    height: 280px;
+    resize: none;
+    overflow: auto;
+}
+
+#contact .submit button {
+    padding: 25px 75px;
+    border: none;
+    background-color: #f28622;
+    font-weight: 500;
+    border-radius: 60px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+    position: static;
+    overflow: visible;
+    isolation: auto;
+}
+
+#contact .submit button::before,
+#contact .submit button::after {
+    display: none;
+}
+
+#contact .submit button:hover {
+    transform: translateY(-5px);
+    background-color: #d4721a;
+}
+
+#contact .info {
+    margin: 0px 120px 0px 50px;
+    border-left: 1px solid #f28622;
+    padding: 0px 0px 0px 30px;
+}
+
+#contact .info h2 {
+    color: #000000;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+#contact .info h2::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    bottom: -8px;
+    background-color: #f28622;
+    height: 5px;
+    box-sizing: border-box;
+    width: 260px;
+}
+
+#contact .info-items {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f28622;
+}
+
+#contact .info-items i {
+    margin-top: 3px;
+    font-size: 18px;
+    color: #f28622;
+    min-width: 20px;
+    flex-shrink: 0;
+}
+
+#contact .info-items h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+}
+
+#contact .info-items a {
+    font-size: 18px;
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#contact .info-items p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+@media (max-width: 900px) {
+    #contact .contacts-section {
+        padding: 25px 40px;
+        gap: 40px;
+    }
+
+    #contact .info {
+        margin: 0 0 0 20px;
+    }
+
+    #contact .send-a-message h2::before {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact .contactUs .title {
+        width: 100%;
+        font-size: 45px;
+    }
+
+    #contact .contactUs p {
+        width: 100%;
+    }
+
+    #contact .contacts-section {
+        grid-template-columns: 1fr;
+        padding: 20px 24px;
+        gap: 30px;
+    }
+
+    #contact .info {
+        margin: 0;
+        border-left: none;
+        border-top: 1px solid #f28622;
+        padding: 30px 0 0 0;
+    }
+
+    #contact .send-a-message h2::before {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact .contactUs {
+        padding: 30px 16px;
+    }
+
+    #contact .contactUs .title {
+        font-size: 32px;
+    }
+
+    #contact .input-name-email {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #contact input,
+    #contact textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #contact textarea {
+        height: 180px;
+    }
+
+    #contact .submit button {
+        width: 100%;
+        padding: 16px;
+        font-size: 18px;
+    }
+
+    #contact .info h2 {
+        font-size: 26px;
+    }
+
+    #contact .info-items h4,
+    #contact .info-items a {
+        font-size: 15px;
+    }
+}
+
+#popupOverlay.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.popup-box i {
+    font-size: 60px;
+    color: #f28622;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.popup-box h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.popup-box p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.popup-box button {
+    padding: 12px 50px;
+    font-size: 18px;
+}
+#popupOverlay {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;    /* change to vw */
+    height: 100vh;   /* change to vh */
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;}

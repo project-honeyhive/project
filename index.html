@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>HoneyHive</title>
 </head>
 <body>
 
 <nav class="navbar">
-    <h1 class="logo">HoneyHive</h1>
+    <h1 class="logo"></h1>
     <ul class="menu">
         <li class="item"><a href="#" class="link" onclick="show('home')">Home</a></li>
         <li class="item"><a href="#" class="link" onclick="show('about')">About</a></li>
@@ -21,8 +26,196 @@
 
 <section id="home"><div>Welcome to HoneyHive</div></section>
 <section id="about"><div>About us</div></section>
-<section id="contact"><div>Contact us</div></section>
-<section id="login"><div>Login</div></section>
+<section id="contact"><div class="upper-contact">
+    <div class="contactUs">
+        <div class="title">
+<h2>CONTACT US</h2>
+        </div>
+        <p>
+            <span>We'd love to hear from you!</span> Whether you have a question about our honey, need help with an order, or just want to say hello.
+        </p>
+    </div>
+    </div>  
+<div class="contacts-section">
+<div class="send-a-message">
+    <h2 class="send-us-message-title">SEND US A MESSAGE</h2>
+    <form>
+
+        <div class="input-name-email"> 
+            <input type="text" required placeholder="Your Name">
+            <input type="email" required placeholder="Email address">
+        </div>
+        <div class="phone-num"><input type="tel" required placeholder="phone number "></div>
+        <div class="message-content"><textarea placeholder="your message"></textarea></div>
+        <div class="submit"><button type="submit">send message</button></div> 
+    </form>
+</div>
+
+<div class="info">
+<h2 class="get-in-touch-title">GET IN TOUCH</h2>
+<div class="info-items">
+    <i class="fa-solid fa-store"></i>
+    <div>
+    <h4>ADDRESS</h4>
+    <p>123 Honey Lane Valley, Sweet Country, HC 12345</p>
+    </div>
+</div>
+<div class="info-items">
+    <a target="_blank" href="https://www.facebook.com/profile.php?id=61589548081058"><i class="fa-brands fa-facebook-f"></i><h4>HoneyHive</h4></a>
+</div>
+<div class="info-items">
+    <a target="_blank" href="https://www.instagram.com/honeyhive0_0/"><i class="fa-brands fa-instagram"></i><h4>honeyhive0_0
+</h4></a>
+</div>
+<div class="info-items">
+    <a href="#"><i class="fa-solid fa-phone"></i><span>+201094836930</span></a>
+</div>
+<div class="info-items">
+    <a href="#"> <i class="fa-regular fa-envelope"></i><span>honeyhive027@gmail.com</span></a>
+</div>
+<div class="info-items">
+    <i class="fa-regular fa-clock"></i>
+    <div>
+    <h4>WORKING HOURS</h4>
+    <p>Saterday-Thursday:10:00am - 10pm <br> Friday: Closed</p>
+    </div>
+</div>
+
+</div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="column">
+                <div class="logo-brand">
+                    <img src="img/edited logooooooooooooooooooooooooooooo.png" class="logo-icon">
+                </div>
+                <p class="logo-p-f">Pure honey, straight from nature to your table. <br> Thank you for supporting natural and sustainable beekeeping.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61589548081058" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/honeyhive0_0/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="column">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns & Refund</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe to get the latest news, offers, and updates.</p>
+                <form>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <div class="subscribe"><button type="submit">SUBSCRIBE</button></div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-box">
+    <h3>Message Sent!</h3>
+    <p>Thank you for reaching out. We'll get back to you soon </p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+
+</section>
+<section id="login"><div class="loginbody"><div class="container"> 
+
+   <div id="loginform" class="login box">
+
+    <h1>Honey Hive</h1>
+    <div class="inputlogin">
+
+        <input id="loginusername" type="text" placeholder="User Name">
+        <i class='bx bxs-user'></i>
+    </div>
+    
+    <div class="inputlogin">
+        <input id="loginpassword" type="password" placeholder="Password">
+        <i class='bx bxs-lock-alt' id="loginpasswordicon" ></i>
+    </div>
+
+    <div class="forget">
+        <a href="#">Forget password?</a>
+    </div>
+
+     <button type="submit" class="btn" id="loginbutton">Login</button>
+
+    <p id="social">OR Login With Social Platforms</p>
+    <div class="socialicons">
+        <a href=""><i class='bx bxl-google' ></i></a>
+        <a href=""><i class='bx bxl-facebook'></i></a>
+        <a href=""><i class='bx bxl-linkedin' ></i></a>
+    </div>
+
+     <div class="signup">
+            <p>Don't have an account? <a href="#" id="tosignup">Sign up</a></p>
+     </div>
+
+   </div>  
+
+<div id="signupform" class="signup box hidden" >
+
+    <h1>Honey Hive</h1>
+    <div class="inputlogin">
+
+        <input id="signupusername" type="text" placeholder="User Name">
+        <i class='bx bxs-user'></i>
+    </div>
+    <div id="Phone" class="inputlogin">
+        <input id="signupphone" type="text" placeholder="Phone Number">
+        <i class='bx bxs-phone'></i>
+    </div>
+    <div id="address" class="inputlogin">
+       <input id="signupaddress" type="text" placeholder="Home Address">
+       <i class='bx bxs-home'></i>
+    </div>
+    
+    <div class="inputlogin">
+        <input id="signuppassword" type="password" placeholder="Password">
+        <i class='bx bxs-lock-alt' id="signuppasswordicon" ></i>
+    </div>
+
+
+     <button type="submit" class="btn" id="signupbutton">Sign Up</button>
+
+    <p id="social">OR Login With Social Platforms</p>
+    <div class="socialicons">
+        <a href="#"><i class='bx bxl-google' ></i></a>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+    </div>
+
+     <div class="signup">
+            <p>Already have account <a href="#" id="tologin">Login</a></p>
+     </div>
+</div>
+
+</div></div></section>
 
 <section id="store">
     <div class="cont">
@@ -56,14 +249,8 @@
             <p class="product-price">$40.00</p>
             <button onclick="addToCart('Acacia Honey', 40)">Add to Cart</button>
         </div>
-     
     </div>
-    <button class="view-cart-btn" onclick="view()"> 🛒</button>
-</section>
-
-
-
-
+    <button class="view-cart-btn" onclick="view()">🛒</button>
 <div class="cart-overlay" id="cartOverlay">
     <div class="cart">
         <div class="cart-header">
@@ -80,7 +267,61 @@
         </div>
     </div>
 </div>
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="column">
+                <div class="logo-brand">
+                    <img src="img/edited logooooooooooooooooooooooooooooo.png" class="logo-icon">
+                </div>
+                <p class="logo-p-f">Pure honey, straight from nature to your table. <br> Thank you for supporting natural and sustainable beekeeping.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61589548081058" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/honeyhive0_0/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="column">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns & Refund</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe to get the latest news, offers, and updates.</p>
+                <form>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <div class="subscribe"><button type="submit">SUBSCRIBE</button></div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</section>
+
+
 
 <script src="zika.js"></script>
+<script src="login.js"></script>
 </body>
 </html>
