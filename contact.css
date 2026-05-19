@@ -1,5 +1,5 @@
 #contact {
-    background-color: #f2cb8b;
+    background-color: wheat;
 }
 
 #contact *:not(.fa):not(.fas):not(.far):not(.fab):not(.fal):not([class*="fa-"]) {
@@ -51,7 +51,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 25px 80px;
-    background-color: #f2cb8b;
+    background-color: wheat;
     gap: 70px;
     margin-top: 25px;
 }
