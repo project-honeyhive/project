@@ -5,6 +5,7 @@ function show(id) {
         el.style.display = "none";
     });
     document.getElementById(id).style.display = "block";
+    window.scrollTo(0, 0);
 }
 
 function addToCart(name, price) {
@@ -99,3 +100,19 @@ document.querySelector('.send-a-message form').addEventListener('submit', functi
   document.getElementById('popupOverlay').addEventListener('click', function(e) {
     if (e.target === this) closePopup();
   });
+
+
+  let mynums = document.querySelectorAll(".num");
+    for (let i = 0; i < mynums.length; i++) {
+        startCount(mynums[i]);
+    }
+    
+    function startCount(el) {
+        let goal = el.dataset.goal;
+        let count = setInterval(() => {
+            el.textContent++;
+            if (el.textContent == goal) {
+                clearInterval(count);
+            }
+        }, 2000 / goal);
+    }

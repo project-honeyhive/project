@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,7 +25,105 @@
     </ul>
 </nav>
 
-<section id="home"><div>Welcome to HoneyHive</div></section>
+<section id="home">
+    <div>
+    <div class="containar">
+            <div class="image">
+                <div class="text">
+                    <p class="t1">PURE Honey</p>
+                    <P class="t2">STRAIGHT FROM </P>
+                    <p class="t3">NATURE</p>
+                    <p class="line">______________</p>
+                    <p class="t4">organic,raw honey collected </p>
+                    <p class="t4">with care from natural beehives</p>
+                    <button class="b1" onclick="show('about')">About Us</button>
+                </div>
+            </div>
+            <div class="image2">
+                <div class="text2">
+                    <p class="t5">Natural Honey</p>
+                    <p class="t6">WORTH
+                        <BR>
+                        TASTING</BR>
+                        
+                    </p>
+                    <P class="t7">
+                        Every drop of our honey is collected <br> from pure natural sources. Unfilteed,<br>raw,and
+                        packed with nutrients <br> nature intended
+                    </P>
+                    <button class="b2" onclick="show('store')" >Show Now</button>
+                </div>
+            </div>
+            <div class="image3"></div>
+            <div class="image4">
+                <div class="text3">
+                    <p class="t8">--OUR PROMISE--</p>
+                    <p class="om">TO YOU</p>
+                    <P class="t0">When you choose our honey, you’re choosing purity,<br> quality, and a better tomorrow.
+                        We are dedicated to <br> providing the best natural honey and a wonderful <br> experience from
+                        our hive to your home.</P>
+                    <button class="b3" onclick="show('contact')">Contact Us</button>
+                </div>
+                <!-- <div class="nums" onscroll="startCount(this)">
+                    <div class="num" data-goal="100">0</div>
+                    <div class="num" data-goal="300">0</div>
+                    <div class="num" data-goal="500">0</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="column">
+                <div class="logo-brand">
+                    <img src="img/edited logooooooooooooooooooooooooooooo.png" class="logo-icon">
+                </div>
+                <p class="logo-p-f">Pure honey, straight from nature to your table. <br> Thank you for supporting natural and sustainable beekeeping.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61589548081058" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/honeyhive0_0/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="column">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#" onclick="show('home')">Home</a></li>
+                    <li><a href="#" onclick="show('about')">About Us</a></li>
+                    <li><a href="#" onclick="show('store')">Store</a></li>
+                    <li><a href="#" onclick="show('contact')">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns & Refund</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe to get the latest news, offers, and updates.</p>
+                <form>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <div class="subscribe"><button type="submit">SUBSCRIBE</button></div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+    </section>
 <section id="about"><div>About us</div></section>
 <section id="contact"><div class="upper-contact">
     <div class="contactUs">
@@ -103,10 +202,10 @@
             <div class="column">
                 <h4>QUICK LINKS</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#" onclick="show('home')">Home</a></li>
+                    <li><a href="#" onclick="show('about')">About Us</a></li>
+                    <li><a href="#" onclick="show('store')">Store</a></li>
+                    <li><a href="#" onclick="show('contact')">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -287,10 +386,10 @@
             <div class="column">
                 <h4>QUICK LINKS</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#" onclick="show('home')">Home</a></li>
+                    <li><a href="#" onclick="show('about')">About Us</a></li>
+                    <li><a href="#" onclick="show('store')">Store</a></li>
+                    <li><a href="#" onclick="show('contact')">Contact Us</a></li>
                 </ul>
             </div>
 
