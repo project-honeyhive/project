@@ -1,0 +1,83 @@
+
+body{
+    background:#2b1205;
+    color:white;
+}
+
+
+
+.active{
+    color:#f0b12d;
+}
+
+
+
+.about-hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px;
+}
+
+.about-hero h3{
+    color:#e0a12a;
+    margin-bottom:20px;
+}
+
+.about-hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.about-hero p{
+    line-height:40px;
+    font-size:22px;
+}
+
+.about-hero img{
+    width:400px;
+    border-radius:20px;
+}
+
+.about-care{
+    width:85%;
+    margin:auto;
+    background:#f5e9d5;
+    color:black;
+    padding:50px;
+    border-radius:20px;
+}
+
+.about-care h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.about-care-box{
+    display:flex;
+    justify-content:space-between;
+}
+
+.about-item{
+    margin-bottom:40px;
+}
+
+.about-item p{
+    margin-top:10px;
+    line-height:30px;
+}
+
+.about-right img{
+    width:350px;
+    border-radius:20px;
+}
+
+.about-mission{
+    text-align:center;
+    padding:80px;
+}
+
+.about-mission h2{
+    color:#e0a12a;
+    margin-bottom:20px;
+}
